@@ -8,7 +8,7 @@ We can then do a comparative analysis to better understand the differences betwe
 
 ## Research Questions
 
-### What makes a movie successful?
+#### What makes a movie successful?
 
 We will focus on 2 variables to determine success: revenue and TMDb score (see Additional Dataset for more information)
 
@@ -26,7 +26,7 @@ This score leaves room for subjectivity, but can give us a sense of the artistic
 It shows the appreciation of the viewers.
 This is found in the TMDb dataset, named vote average. We need to remove movies that have zero votes because they are automatically given a rating of zero.
 
-### Questions:
+#### Questions:
 
 + Is there an ideal runtime to optimize revenue?
 + Does the movie's languages influence success? Are certain languauges more popular? is there an ideal number of different languages?
@@ -42,5 +42,28 @@ The given CMU Movie Dataset Corpus, although being interesting, lacks data: for 
 
 https://www.kaggle.com/datasets/asaniczka/tmdb-movies-dataset-2023-930k-movies/data
 
-In addition, this dataset allows us to increase the size of the sample in order to perform more precise data analysis. 
+In addition, this dataset allows us to increase the size of the sample in order to perform more precise data analysis.
+
+## Methods
+
++ Data pre-processing:
+  + Transforming the numerical columns to numbers
+  + Transforming columns that list things to actual lists. This makes handling the data easier, such as for one hot encoding
+  + One hot encoding of categorical data (genre, language…)
+  + Transforming revenue to log revenue, to account for the skewed distribution of revenues (see notebook)
++ Initial data analysis: plotting success vs different features (for both financial success and viewer ratings)
+  + scatter plots for continuous features (runtime, budget, year…)
+  + bar plots for categorical data (languages, actors…)
+revenue must be adjusted to take time (historical context) into account. To do so we normalize revenue according to the average of each year? or each 5 years? 
+  + Regression analysis to identify most important features
+  + Comparative study between features linked to financial success and those linked to viewers’ appreciation
+
+## Proposed timeline
+
+Deadline: December 20th => 5 weeks left for the project
+Week 1
+Week 2
+Week 3
+Week 4
+Week 5
 
