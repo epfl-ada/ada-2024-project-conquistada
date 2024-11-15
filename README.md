@@ -1,4 +1,4 @@
-# ADA Project: What makes for a successful movie?
+# What makes for a successful movie?
 
 ## Abstract
 This project investigates the factors that contribute to a movie's success. Is it as simple as casting the most popular actors ?
