@@ -46,23 +46,24 @@ Inflation is also a parameter that should not be neglected. All the cost/revenue
 
 ## Methods
 
-1. Data pre-processing:
+**1. Data pre-processing:**
   + Transforming the numerical columns to numbers
   + Transforming columns that list things to actual lists. This makes handling the data easier, such as for one hot encoding
   + One-hot encoding of categorical data (genre, language…)
   + Scaling of cost/revenue to take time into consideration. Transforming revenue to log revenue, to account for the skewed distribution of revenues (see notebook)
-2. Initial data analysis:
+**2. Initial data analysis:**
   + plotting success vs different features
     + scatter plots for continuous features (runtime, budget, year…)
     + bar plots for categorical data (languages, actors…)
   + Computation of Pearson/Spearman correlation coefficients
   + Regression analysis, and Random Forest for feature importance
   + Analysis of movie summaries, sentiment analysis, readability...
-3. Comparative study between financially successful and highly rated movies:
-  + Clustering: try to establish different clusters of movies according to their genre, contry of production, budget...
-  + Tree based models to determine feature importance for both cases (financial success and high ratings)
-  + Supervised ML models to predict both types of success
-  + Compare/contrast of movie features amongst highly rated movies / financially successful movies
+**3. Comparative study between financially successful and highly rated movies:**
+  + Clustering: Establish clusters of movies according to their genre, budget, country of production...
+  + Tree based models to determine feature importance for both financial success and high ratings
+  + Supervised ML models to predict both economical and critical successes
+  + Analysis of relevant features amongst highly rated movies and financially successful movies
+    + Research of a feature combination that can lead to an excellent movie both financially and critically
 
 
 
@@ -70,15 +71,15 @@ Inflation is also a parameter that should not be neglected. All the cost/revenue
 
 Deadline: December 20th => 5 weeks left for the project
 
-Week 1 (-> 22 Nov): Finish the initial data analysis: we already have plots for financial success, need to do the same for TMDb ratings.
+**Week 1** (-> 22 Nov): Finish the initial data analysis: we already have plots for financial success, need to do the same for TMDb ratings.
 
-Week 2 (-> 29 Nov): Homework 2, regression analysis and random forest for TMDb ratings
+**Week 2** (-> 29 Nov): Homework 2, regression analysis and random forest for TMDb ratings
 
-Week 3 (-> 6 Dec): Supervised machine learning models for predicting TMDb score, clustering of similar movies
+**Week 3** (-> 6 Dec): Supervised machine learning models for predicting TMDb score, clustering of similar movies
 
-Week 4 (-> 13 Dec): Comparison of feature importance, identification of (dis)similarities between both types of success
+**Week 4** (-> 13 Dec): Comparison of feature importance, identification of (dis)similarities between both types of success
 
-Week 5 (-> 20 Dec): Data story
+**Week 5** (-> 20 Dec): Data story
 
 ## Team organisation
 
