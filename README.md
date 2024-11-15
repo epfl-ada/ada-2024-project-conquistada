@@ -78,7 +78,7 @@ Week 3 (-> 6 Dec): Supervised machine learning models for predicting TMDb score,
 
 Week 4 (-> 13 Dec): Comparison of feature importance, identification of (dis)similarities between both types of success
 
-Week 5 (-> 20 Dec): Finishing touches
+Week 5 (-> 20 Dec): Data story
 
 ## Team organisation
 
@@ -94,9 +94,8 @@ ML models: Erik and Anna
 
 Comparative analysis: Omar and Youssef
 
+Data Story : Everyone
 
 ## Questions for TAs 
-
-Is it still possible to include more data during the milestone 3 ? We might want to use other datasets if needed. 
 
 Are we able to slightly redirect the project during the milestone 3 or are we required to execute what we presented ?
