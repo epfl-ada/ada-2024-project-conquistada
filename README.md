@@ -81,10 +81,15 @@ Week 5 (-> 20 Dec): Finishing touches
 ## Team organisation
 
 Data analysis/visualisation for TMDb ratings: Omar and Erik
+
 Regression analysis + Random Forest: Youssef
+
 Further analysis of summaries, NLP: Liess and Omar
+
 Defining movie clusters, further data transformation: Anna and Youssef
+
 ML models: Erik and Anna
+
 Comparative analysis: Omar and Youssef
 
 
