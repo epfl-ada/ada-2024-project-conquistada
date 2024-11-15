@@ -43,9 +43,6 @@ The given CMU Movie Dataset Corpus, although being interesting, lacks data: for 
 
 Inflation is also a parameter that should not be neglected. All the cost/revenue data should be scaled according to the inflation between the year of production of a given movie and today. [This dataset containing the history of inflation rate in the US](https://www.macrotrends.net/global-metrics/countries/USA/united-states/inflation-rate-cpi) will be very useful for this. Knowing all the annual inflation rates, computing the cumulative rates for every year and applying them to the money-related values will be feasible.
 
-To scale the all the cost/revenue data, we will use 
-
-
 
 ## Methods
 
