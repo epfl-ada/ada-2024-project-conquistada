@@ -58,10 +58,11 @@ Inflation is also a parameter that should not be neglected. All the cost/revenue
   + Regression analysis, and Random Forest for feature importance
   + Sentiment analysis for highly rated films and for financially succesful films
 3. Comparative study between financially successful and highly rated movies:
-  + Clustering: try an establish different clusters of movies according to their genre, contry of production, budget...
-  + Further NPL 
+  + Clustering: try to establish different clusters of movies according to their genre, contry of production, budget...
   + Tree based models to determine feature importance for both cases (financial success and high ratings)
-  + 
+  + Supervised ML models to predict both types of success
+  + Compare/contrast of movie features amongst highly rated movies / financially successful movies
+
 
 
 ## Proposed timeline
