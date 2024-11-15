@@ -68,13 +68,23 @@ Inflation is also a parameter that should not be neglected. All the cost/revenue
 
 Deadline: December 20th => 5 weeks left for the project
 
-Week 1 (-> 22 Nov): Finish the initial data analysis: already done for financial success, need to do the same for viewer ratings.
+Week 1 (-> 22 Nov): Finish the initial data analysis: we already have plots for financial success, need to do the same for TMDb ratings.
 
-Week 2 (-> 29 Nov): Homework 2, regression analysis 
+Week 2 (-> 29 Nov): Homework 2, regression analysis and random forest for TMDb ratings
 
-Week 3 (-> 6 Dec): 
+Week 3 (-> 6 Dec): Supervised machine learning models for predicting TMDb score, clustering of similar movies
 
-Week 4 (-> 13 Dec): 
+Week 4 (-> 13 Dec): Comparison of feature importance, identification of (dis)similarities between both types of success
 
-Week 5 (-> 20 Dec)
+Week 5 (-> 20 Dec): Finishing touches
+
+## Team organisation
+
+Data analysis/visualisation for TMDb ratings: Omar and Erik
+Regression analysis + Random Forest: Youssef
+Further analysis of summaries, NLP: Liess and Omar
+Defining movie clusters, further data transformation: Anna and Youssef
+ML models: Erik and Anna
+Comparative analysis: Omar and Youssef
+
 
