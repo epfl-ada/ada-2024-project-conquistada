@@ -51,6 +51,7 @@ Inflation is also a parameter that should not be neglected. All the cost/revenue
   + Transforming columns that list things to actual lists. This makes handling the data easier, such as for one hot encoding
   + One-hot encoding of categorical data (genre, language…)
   + Scaling of cost/revenue to take time into consideration. Transforming revenue to log revenue, to account for the skewed distribution of revenues (see notebook)
+    
 **2. Initial data analysis:**
   + plotting success vs different features
     + scatter plots for continuous features (runtime, budget, year…)
@@ -58,6 +59,7 @@ Inflation is also a parameter that should not be neglected. All the cost/revenue
   + Computation of Pearson/Spearman correlation coefficients
   + Regression analysis, and Random Forest for feature importance
   + Analysis of movie summaries, sentiment analysis, readability...
+    
 **3. Comparative study between financially successful and highly rated movies:**
   + Clustering: Establish clusters of movies according to their genre, budget, country of production...
   + Tree based models to determine feature importance for both financial success and high ratings
