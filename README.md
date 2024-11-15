@@ -37,7 +37,7 @@ This is found in the TMDb dataset, named vote average. We need to remove movies 
 + The choice of actors plays an important role in the revenue of a movie. Is it the same for TMDb scores? Which what caracteristics should the cast have to ensure a successful movie?
 + What feature is the most important in determining revenue/TMDb score?
 
-## Additional Dataset
+## Additional Datasets
 
 The given CMU Movie Dataset Corpus, although being interesting, lacks data: for instance, many box-office revenues are missing. To complete them, [this TMDb Kaggle Dataset](https://www.kaggle.com/datasets/asaniczka/tmdb-movies-dataset-2023-930k-movies/data) seemed interesting for us. Note that the dataset used in `results.ipynb` is already processed in `src/data/dataprocessing.py` and includes both data from CMU and TMDb datasets.
 
@@ -95,3 +95,8 @@ ML models: Erik and Anna
 Comparative analysis: Omar and Youssef
 
 
+## Questions for TAs 
+
+Is it still possible to include more data during the milestone 3 ? We might want to use other datasets if needed. 
+
+Are we able to slightly redirect the project during the milestone 3 or are we required to execute what we presented ?
