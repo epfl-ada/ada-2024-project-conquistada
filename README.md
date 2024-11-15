@@ -31,7 +31,7 @@ This is found in the TMDb dataset, named vote average. We need to remove movies 
 #### Questions:
 
 + Is there an ideal runtime to optimize revenue? Is it the same for optimizing viewers apreciation?
-+ Does the movie's languages influence success? Are certain languauges more popular? Is there an ideal number of different languages?
++ Does the movie's languages influence success? Are certain languages more popular? Is there an ideal number of different languages?
 + What countries have the most success in the movie industry? What production companies are the most successful? What factors inflence success in different countries?
 + How does budget affect TMDb score and revenue? What makes a movie successful on a low budget?
 + The choice of actors plays an important role in the revenue of a movie. Is it the same for TMDb scores? Which what caracteristics should the cast have to ensure a successful movie?
