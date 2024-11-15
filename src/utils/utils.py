@@ -1,10 +1,3 @@
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import scipy.stats as stats
-import seaborn as sns
-import json
-
 from ast import literal_eval
 
 
@@ -27,9 +20,9 @@ def str_to_list(str):
     except AttributeError:
         return None
 
-# Helper functions for processing JSON-like columns
-def str_to_list(entry):
-    try:
-        return [d['name'] for d in literal_eval(entry)]
-    except:
-        return []
+def get_capitalized_first_letter(text):
+    """
+    Splits the string into words by ' '. Capitalizes the first
+    letter of every word.
+    """
+    return ' '.join(word.capitalize() for word in text.split())
