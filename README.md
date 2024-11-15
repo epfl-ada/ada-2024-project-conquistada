@@ -55,8 +55,9 @@ Inflation is also a parameter that should not be neglected. All the cost/revenue
   + plotting success vs different features
     + scatter plots for continuous features (runtime, budget, year…)
     + bar plots for categorical data (languages, actors…)
+  + Computation of Pearson/Spearman correlation coefficients
   + Regression analysis, and Random Forest for feature importance
-  + Sentiment analysis for highly rated films and for financially succesful films
+  + Analysis of movie summaries, sentiment analysis, readability...
 3. Comparative study between financially successful and highly rated movies:
   + Clustering: try to establish different clusters of movies according to their genre, contry of production, budget...
   + Tree based models to determine feature importance for both cases (financial success and high ratings)
