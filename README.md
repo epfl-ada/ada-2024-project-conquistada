@@ -55,21 +55,27 @@ https://www.macrotrends.net/global-metrics/countries/USA/united-states/inflation
   + Transforming the numerical columns to numbers
   + Transforming columns that list things to actual lists. This makes handling the data easier, such as for one hot encoding
   + One hot encoding of categorical data (genre, language…)
-  + Transforming revenue to log revenue, to account for the skewed distribution of revenues (see notebook)
-2. Initial data analysis: plotting success vs different features (for both financial success and viewer ratings)
-  + scatter plots for continuous features (runtime, budget, year…)
-  + bar plots for categorical data (languages, actors…)
-revenue must be adjusted to take time (historical context) into account. To do so we normalize revenue according to the average of each year? or each 5 years? 
-  + Regression analysis to identify most important features
-  + Comparative study between features linked to financial success and those linked to viewers’ appreciation
+  + Scaling of cost/revenue to take time into consideration. Transforming revenue to log revenue, to account for the skewed distribution of revenues (see notebook)
+2. Initial data analysis:
+  + plotting success vs different features
+    + scatter plots for continuous features (runtime, budget, year…)
+    + bar plots for categorical data (languages, actors…)
+  + Regression analysis, and Random Forest for feature importance
+  + Sentiment analysis for highly rated films and for financially succesful films
+3. Comparative study between financially successful and highly rated movies:
+  + Clustering: try an establish different clusters of movies according to their genre, contry of production, budget...
+  + Further NPL 
+  + Tree based models to determine feature importance for both cases (financial success and high ratings)
+  + 
+
 
 ## Proposed timeline
 
 Deadline: December 20th => 5 weeks left for the project
 
-Week 1 (-> 22 Nov): 
+Week 1 (-> 22 Nov): Finish the initial data analysis: already done for financial success, need to do the same for viewer ratings.
 
-Week 2 (-> 29 Nov): Homework 2
+Week 2 (-> 29 Nov): Homework 2, regression analysis 
 
 Week 3 (-> 6 Dec): 
 
