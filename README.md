@@ -39,22 +39,19 @@ This is found in the TMDb dataset, named vote average. We need to remove movies 
 
 ## Additional Dataset
 
-The given CMU Movie Dataset Corpus, although being interesting, lacks data: for instance, many box-office revenues are missing. To complete them, this TMDb Kaggle Dataset seemed interesting for us.
+The given CMU Movie Dataset Corpus, although being interesting, lacks data: for instance, many box-office revenues are missing. To complete them, [this TMDb Kaggle Dataset](https://www.kaggle.com/datasets/asaniczka/tmdb-movies-dataset-2023-930k-movies/data) seemed interesting for us. Note that the dataset used in `results.ipynb` is already processed in `src/data/dataprocessing.py` and includes both data from CMU and TMDb datasets.
 
-https://www.kaggle.com/datasets/asaniczka/tmdb-movies-dataset-2023-930k-movies/data
 
-In addition, this dataset allows us to increase the size of the sample in order to perform more precise data analysis.
+To scale the all the cost/revenue data, we will use [this dataset of inflation rate](https://www.macrotrends.net/global-metrics/countries/USA/united-states/inflation-rate-cpi)
 
-To scale the all the cost/revenue data, we will use the following dataset of inflation rate
 
-https://www.macrotrends.net/global-metrics/countries/USA/united-states/inflation-rate-cpi
 
 ## Methods
 
 1. Data pre-processing:
   + Transforming the numerical columns to numbers
   + Transforming columns that list things to actual lists. This makes handling the data easier, such as for one hot encoding
-  + One hot encoding of categorical data (genre, language…)
+  + One-hot encoding of categorical data (genre, language…)
   + Scaling of cost/revenue to take time into consideration. Transforming revenue to log revenue, to account for the skewed distribution of revenues (see notebook)
 2. Initial data analysis:
   + plotting success vs different features
