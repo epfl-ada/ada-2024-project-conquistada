@@ -1,10 +1,12 @@
 # ADA Project: What makes for a successful movie?
 
 ## Abstract
-For this project, our goal is to find the recipe for a successful movie. Is it as simple as casting the most popular actors?
-To do so, we will differentiate between success in terms of revenue (box office value, net revenue, and revenue/budget ratio) and success in terms of viewers’ appreciation (TMDb ratings).
-First, we will try to identify relationships between features such as cast, budget, runtime, production company… and the success of a movie. We will therefore be able to identify which features have the most importance in determining success.
-We can then do a comparative analysis to better understand the differences between a financially successful movie and a highly rated movie. Doing so, we can study if it is possible to combine both and make the greatest movie of all time.
+This project investigates the factors that contribute to a movie's success. Is it as simple as casting the most popular actors ?
+
+To do so, two key dimensions will be examined: financial performance (e.g., box office value, net revenue, revenue/budget ratio) and audience reception (e.g., TMDb ratings). By analyzing features such as cast, budget, runtime, and production company, we aim to identify the elements that are most strongly associated with success in each dimension.
+
+Furthermore, we will conduct a comparative analysis in order to explore the differences between financially successful movies and highly rated ones. The goal is to determine whether it is possible to combine these elements to create a movie that excels both critically and commercially. This analysis will provide data-driven insights into the film industry and inform strategies for optimizing movie production and distribution.
+
 
 ## Research Questions
 
@@ -45,12 +47,12 @@ In addition, this dataset allows us to increase the size of the sample in order 
 
 ## Methods
 
-+ Data pre-processing:
+1. Data pre-processing:
   + Transforming the numerical columns to numbers
   + Transforming columns that list things to actual lists. This makes handling the data easier, such as for one hot encoding
   + One hot encoding of categorical data (genre, language…)
   + Transforming revenue to log revenue, to account for the skewed distribution of revenues (see notebook)
-+ Initial data analysis: plotting success vs different features (for both financial success and viewer ratings)
+2. Initial data analysis: plotting success vs different features (for both financial success and viewer ratings)
   + scatter plots for continuous features (runtime, budget, year…)
   + bar plots for categorical data (languages, actors…)
 revenue must be adjusted to take time (historical context) into account. To do so we normalize revenue according to the average of each year? or each 5 years? 
@@ -60,9 +62,14 @@ revenue must be adjusted to take time (historical context) into account. To do s
 ## Proposed timeline
 
 Deadline: December 20th => 5 weeks left for the project
-Week 1
-Week 2
-Week 3
-Week 4
-Week 5
+
+Week 1 (-> 22 Nov): 
+
+Week 2 (-> 29 Nov): Homework 2
+
+Week 3 (-> 6 Dec): 
+
+Week 4 (-> 13 Dec): 
+
+Week 5 (-> 20 Dec)
 
