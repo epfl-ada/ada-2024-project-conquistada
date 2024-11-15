@@ -65,7 +65,7 @@ Inflation is also a parameter that should not be neglected. All the cost/revenue
   + Tree based models to determine feature importance for both financial success and high ratings
   + Supervised ML models to predict both economical and critical successes
   + Analysis of relevant features amongst highly rated movies and financially successful movies
-    + Research of a feature combination that can lead to an excellent movie both financially and critically
+  + Research of a feature combination that can lead to an excellent movie both financially and critically
 
 
 
