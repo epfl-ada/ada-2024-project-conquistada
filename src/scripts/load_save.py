@@ -1,5 +1,15 @@
 import pandas as pd
+from ast import literal_eval
 
+def dict_to_list(dict_str):
+    """
+    Parses a json dictionary into a list
+    """
+    try:
+        genre_dict = literal_eval(dict_str)
+        return list(genre_dict.values())
+    except (ValueError, SyntaxError):
+        return None
 
 def load_datasets(PATH):
     """This function loads the raw datasets from the CMU Movie dataset and returns them as pandas dataframes.
@@ -11,22 +21,28 @@ def load_datasets(PATH):
         pd.DataFrame: The movies dataframe.
         pd.DataFrame: The characters dataframe.
         pd.DataFrame: The names dataframe.
+        pd.DataFrame: The plot summaries dataframe.
         pd.DataFrame: The tvtropes dataframe
     """
-    movies = pd.read_csv(PATH + 'movie.metadata.tsv', sep='\t', header=None) # Load the raw cmu movie dataset
+    movies = pd.read_csv(PATH + 'movie.metadata.tsv', sep='\t', header=None)
     movies.columns = ['Wikipedia movie ID', 'Freebase movie ID', 'Movie name', 'Movie release date', 'Movie box office revenue', 'Movie runtime', 'Movie languages', 'Movie countries', 'Movie genres']
-    movies = movies.dropna(subset=['Movie name'])
-    movies['Movie name'] = movies['Movie name'].str.lower()
+    movies['Extracted Genres'] = movies['Movie genres'].apply(dict_to_list)
+    movies['Extracted Languages'] = movies['Movie languages'].apply(dict_to_list)
+    movies['Movie box office revenue'] = pd.to_numeric(movies['Movie box office revenue'], errors='coerce')
+    movies = movies.dropna(subset=['Movie name', 'Movie box office revenue', 'Extracted Genres'])
 
-    characters = pd.read_csv(PATH + 'character.metadata.tsv', sep='\t', header=None) # Load the raw cmu character dataset
+    characters = pd.read_csv(PATH + 'character.metadata.tsv', sep='\t', header=None)
     characters.columns = ['Wikipedia movie ID', 'Freebase movie ID','Movie release date', 'Character Name', 'Actor DOB', 'Actor gender', 'Actor height', 'Actor ethnicity', 'Actor Name', 'Actor age at movie release', 'Freebase character map', 'Freebase character ID', 'Freebase actor ID']
 
-    names = pd.read_csv(PATH + 'name.clusters.txt', sep='\t', header=None) # Load the raw cmu name dataset
+    names = pd.read_csv(PATH + 'name.clusters.txt', sep='\t', header=None)
     names.columns = ['Character Name', 'Freebase actor ID']
 
-    tvtropes = pd.read_csv(PATH + 'tvtropes.clusters.txt', sep='\t', header=None) # Load the raw cmu tvtropes dataset
-    tvtropes.columns = ['Trope', 'Movie name']
-    return movies, characters, names, tvtropes
+    plot_summaries = pd.read_csv(PATH + 'plot_summaries.txt', sep='\t', header=None)
+    plot_summaries.columns = ['Wikipedia movie ID', 'Plot']
+
+    tvtropes = pd.read_csv(PATH + 'tvtropes.clusters.txt', sep='\t', header=None)
+    tvtropes.columns = ['Trope', 'Info']
+    return movies, characters, names, plot_summaries, tvtropes
 
 
 def load_tmdb_raw(PATH):

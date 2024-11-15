@@ -1,1 +1,11 @@
-
+numpy
+matplotlib
+scipy
+sklearn
+statmodels
+seaborn
+pandas
+ast
+textblob
+textstat
+spacy
