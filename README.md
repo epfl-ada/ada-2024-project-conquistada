@@ -12,14 +12,14 @@ Furthermore, we will conduct a comparative analysis in order to explore the diff
 
 #### What makes a movie successful?
 
-We will focus on 2 variables to determine success: revenue and TMDb score (see Additional Dataset for more information)
+We will focus on 2 variables to determine success: revenue and TMDb score (see Additional Datasets for more information)
 
 __Revenue__: 
 
 We can study the box office value (gross revenue) the net revenue. 
 The revenue/budget ratio is also interesting to study, as the box office does not take into account the costs of the movie.
 These can be found in the CMU movie corpus dataset and in the TMDb dataset.
-We need to take time into consideration (because events can affect movie revenue, such as war, pandemics…). To do so, we could normalize the data according to the average revenue of each year.
+Inflation is also a parameter that should not be neglected. All the cost/revenue data should be scaled according to the inflation between the year of production of a given movie and today. The history of US inflation dataset will be very useful for this.
 
 __TMDb ratings__:
 
@@ -30,8 +30,8 @@ This is found in the TMDb dataset, named vote average. We need to remove movies 
 
 #### Questions:
 
-+ Is there an ideal runtime to optimize revenue?
-+ Does the movie's languages influence success? Are certain languauges more popular? is there an ideal number of different languages?
++ Is there an ideal runtime to optimize revenue? Is it the same for optimizing viewers apreciation?
++ Does the movie's languages influence success? Are certain languauges more popular? Is there an ideal number of different languages?
 + What countries have the most success in the movie industry? What production companies are the most successful? What factors inflence success in different countries?
 + How does budget affect TMDb score and revenue? What makes a movie successful on a low budget?
 + The choice of actors plays an important role in the revenue of a movie. Is it the same for TMDb scores? Which what caracteristics should the cast have to ensure a successful movie?
@@ -44,6 +44,10 @@ The given CMU Movie Dataset Corpus, although being interesting, lacks data: for 
 https://www.kaggle.com/datasets/asaniczka/tmdb-movies-dataset-2023-930k-movies/data
 
 In addition, this dataset allows us to increase the size of the sample in order to perform more precise data analysis.
+
+To scale the all the cost/revenue data, we will use the following dataset of inflation rate
+
+https://www.macrotrends.net/global-metrics/countries/USA/united-states/inflation-rate-cpi
 
 ## Methods
 
