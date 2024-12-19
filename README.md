@@ -85,15 +85,15 @@ Deadline: December 20th => 5 weeks left for the project
 
 ## Team organisation
 
-Data analysis/visualisation for TMDb ratings: Omar and Erik
+Data analysis/visualisation for TMDb ratings: Omar and Eirikur
 
-Regression analysis + Random Forest: Youssef
+Regression analysis + Random Forest: Youssef and Eirikur
 
 Further analysis of summaries, NLP: Liess and Omar
 
 Defining movie clusters, further data transformation: Anna and Youssef
 
-ML models: Erik and Anna
+ML models: Eirikur and Anna
 
 Comparative analysis: Omar and Youssef
 
