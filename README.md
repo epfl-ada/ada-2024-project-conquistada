@@ -5,8 +5,8 @@ The description of our project in the form of a data story can be found on our [
 #### Quickstart
 ```bash
 # clone project
-git clone <project link>
-cd <project repo>
+git clone <project link>  # use https://github.com/epfl-ada/ada-2024-project-conquistada.git
+cd <project repo>  # ada-2024-project-conquistada
 
 # install requirements
 pip install -r pip_requirements.txt
@@ -19,17 +19,16 @@ pip install -r pip_requirements.txt
 │   ├── tmdb                          <- Tmdb Dataset
 │
 ├── src                           <- Source code
-│   ├── data                          <- Data directory
+│   ├── data                          <- Data processing
 │       ├── dataprocessing.py
-│   ├── scripts                       <- Shell scripts
+│   ├── scripts                       <- Loading and saving the data
 │       ├── load_save.py                 
 │   ├── utils                         <- Utility directory
 │       ├── utils.py
 │                      
 │
 ├── results.ipynb                 <- Notebook with the results of our analysis
-│
-├── README.md                 
+│               
 ├── pip_requirements.txt          <- File for installing python dependencies
 └── README.md
 ```
@@ -37,15 +36,19 @@ pip install -r pip_requirements.txt
 #### How to use the library
 
 The datasets we used for our analysis can be found in the [cmu](data/cmu) and the [tmdb](data/tmdb) folders.
-The results of our analysis can be found in this [notebook](results.ipynb). This notebook calls external scripts for [loading the data](src/data/dataprocessing.py) and [dataprocessing](src/data/dataprocessing.py). The methods called in the notebook can be found [here] (add the methods folder)
+The results of our analysis can be found in the notebook [results.ipynb](results.ipynb). This notebook calls methods contained in external scripts for [loading the data](src/data/load_save.py) and [dataprocessing](src/data/dataprocessing.py).
 
-> [!CAUTION]
-> add the methods thing + link
+After dowloading the required packages, you can excecute the notebook to obtain the desired results.
+
+> [!WARNING]
+> Please be aware that some cells of the notebook require more than 15 min to run. Thank you for your patience :)
+
+A detailed description of our project and the results can be found [here](https://epfl-ada.github.io/conquistada.github.io)
 
 ## Abstract
-This project investigates the factors that contribute to a movie's success. Is it as simple as casting the most popular actors ?
+This project investigates the factors that contribute to a movie's success.
 
-To do so, two key dimensions will be examined: financial performance (e.g., box office value, net revenue, revenue/budget ratio) and audience reception (e.g., TMDb ratings). By analyzing features such as cast, budget, runtime, and production company, we aim to identify the elements that are most strongly associated with success in each dimension.
+To do so, two key dimensions will be examined: financial performance (e.g., box office value, net revenue, revenue/budget ratio) and audience reception (e.g., TMDb ratings). By analyzing features such as runtime, cast, spoken languages, genre, plot summaries, release date, we aim to identify the elements that are most strongly associated with success in each dimension.
 
 Furthermore, we will conduct a comparative analysis in order to explore the differences between financially successful movies and highly rated ones. The goal is to determine whether it is possible to combine these elements to create a movie that excels both critically and commercially. This analysis will provide data-driven insights into the film industry and inform strategies for optimizing movie production and distribution.
 
