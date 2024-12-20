@@ -107,15 +107,39 @@ def enrich_dataset(tmdb, movies):
         keywords_exploded, # The exploded dataset with one row per keyword in the keywords column
     )
 
-# NER function to identify diversity elements
+# Function to extract named entities from a given text using a natural language processing (NLP) model
 def extract_entities(text, nlp):
+    """
+    Extracts named entities (characters, locations, and other entities) from the provided text.
+
+    Args:
+        text (str): The input text from which named entities are to be extracted.
+        nlp: The NLP model (e.g., spaCy's language model) used for named entity recognition (NER).
+
+    Returns:
+        dict: A dictionary containing lists of identified entities categorized as:
+            - 'characters': Names of people (labeled as "PERSON").
+            - 'locations': Geopolitical entities like countries, cities, etc. (labeled as "GPE").
+            - 'other_entities': Other types of named entities, returned as tuples (entity text, entity label).
+    """
+    # Process the input text using the provided NLP model
     doc = nlp(text)
+    
+    # Initialize a dictionary to store extracted entities by category
     entities = {'characters': [], 'locations': [], 'other_entities': []}
+    
+    # Iterate through all identified named entities in the processed text
     for ent in doc.ents:
+        # If the entity is labeled as "PERSON", add it to the 'characters' list
         if ent.label_ == "PERSON":
             entities['characters'].append(ent.text)
+        # If the entity is labeled as "GPE" (Geopolitical Entity), add it to the 'locations' list
         elif ent.label_ == "GPE":
             entities['locations'].append(ent.text)
+        # For all other entity types, add them to the 'other_entities' list as tuples
         else:
             entities['other_entities'].append((ent.text, ent.label_))
+    
+    # Return the dictionary of categorized entities
     return entities
+
