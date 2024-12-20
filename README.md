@@ -2,7 +2,7 @@
 
 The description of our project can be found on our [website](https://epfl-ada.github.io/conquistada.github.io)
 
-## Quickstart
+#### Quickstart
 ```bash
 # clone project
 git clone <project link>
@@ -12,7 +12,7 @@ cd <project repo>
 pip install -r pip_requirements.txt
 ```
 
-## Project Structure
+#### Project Structure
 ```
 ├── data                          <- Project data files
 │   ├── cmu                           <- CMU Movie Summary Corpus
@@ -33,6 +33,11 @@ pip install -r pip_requirements.txt
 ├── pip_requirements.txt          <- File for installing python dependencies
 └── README.md
 ```
+
+#### How to use the library
+
+The datasets we used for our analysis can be found in the [cmu](data/cmu) and the [tmdb](data/tmdb) folders, contained in the [data folders](data)
+The results of our analysis can be found in this [notebook](results.ipynb). This notebook calls external scripts for [loading the data](src/data/dataprocessing.py) and [dataprocessing](src/data/dataprocessing)
 
 ## Abstract
 This project investigates the factors that contribute to a movie's success. Is it as simple as casting the most popular actors ?
