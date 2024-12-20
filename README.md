@@ -27,10 +27,9 @@ pip install -r pip_requirements.txt
 │       ├── utils.py
 │                      
 │
-├── results.ipynb                 <- Notebook with the results of our analysis
-│               
+├── README.md                             
 ├── pip_requirements.txt          <- File for installing python dependencies
-└── README.md
+└── results.ipynb                 <- Notebook with the results of our analysis
 ```
 
 #### How to use the library
