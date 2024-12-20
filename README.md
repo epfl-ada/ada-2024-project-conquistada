@@ -16,7 +16,7 @@ pip install -r pip_requirements.txt
 ```
 ├── data                          <- Project data files
 │   ├── cmu                           <- CMU Movie Summary Corpus
-│   ├── tmdb                          <- Tmdb Dataset
+│   ├── tmdb                          <- TMDb Dataset
 │
 ├── src                           <- Source code
 │   ├── data                          <- Data processing
@@ -38,17 +38,17 @@ pip install -r pip_requirements.txt
 The datasets we used for our analysis can be found in the [cmu](data/cmu) and the [tmdb](data/tmdb) folders.
 The results of our analysis can be found in the notebook [results.ipynb](results.ipynb). This notebook calls methods contained in external scripts for [loading the data](src/data/load_save.py) and [dataprocessing](src/data/dataprocessing.py).
 
-After dowloading the required packages, you can excecute the notebook to obtain the desired results.
+After dowloading the required packages described in [pip_requirements.txt](pip_requirements.txt), you can excecute the notebook to obtain the desired results.
 
 > [!WARNING]
-> Please be aware that some cells of the notebook require more than 15 min to run. Thank you for your patience :)
+> Please be aware that some cells of the notebook require ~15 min to run. Thank you for your patience :)
 
 A detailed description of our project and the results can be found [here](https://epfl-ada.github.io/conquistada.github.io)
 
 ## Abstract
 This project investigates the factors that contribute to a movie's success.
 
-To do so, two key dimensions will be examined: financial performance (e.g., box office value, net revenue, revenue/budget ratio) and audience reception (e.g., TMDb ratings). By analyzing features such as runtime, cast, spoken languages, genre, plot summaries, release date, we aim to identify the elements that are most strongly associated with success in each dimension.
+To do so, two key dimensions will be examined: financial performance (e.g., box office value, net revenue, revenue/budget ratio) and audience reception (e.g., TMDb ratings). By analyzing features such as runtime, cast, spoken languages, genre, plot summaries, release date... we aim to identify the elements that are most strongly associated with success in each dimension.
 
 Furthermore, we will conduct a comparative analysis in order to explore the differences between financially successful movies and highly rated ones. The goal is to determine whether it is possible to combine these elements to create a movie that excels both critically and commercially. This analysis will provide data-driven insights into the film industry and inform strategies for optimizing movie production and distribution.
 
@@ -57,14 +57,13 @@ Furthermore, we will conduct a comparative analysis in order to explore the diff
 
 #### What makes a movie successful?
 
-We will focus on 2 variables to determine success: revenue and TMDb score (see Additional Datasets for more information)
+We will focus on 2 variables to determine success: revenue and TMDb score (see [Additional Datasets](#additional-datasets) for more information).
 
 __Revenue__: 
 
 We can study the box office value (gross revenue) the net revenue. 
 The revenue/budget ratio is also interesting to study, as the box office does not take into account the costs of the movie.
 These can be found in the CMU movie corpus dataset and in the TMDb dataset.
-Inflation is also a parameter that should not be neglected. All the cost/revenue data should be scaled according to the inflation between the year of production of a given movie and today. The history of US inflation dataset will be very useful for this.
 
 __TMDb ratings__:
 
@@ -86,24 +85,23 @@ This is found in the TMDb dataset, named vote average. We need to remove movies 
 
 The given CMU Movie Dataset Corpus, although being interesting, lacks data: for instance, many box-office revenues are missing. To complete them, [this TMDb Kaggle Dataset](https://www.kaggle.com/datasets/asaniczka/tmdb-movies-dataset-2023-930k-movies/data) seemed interesting for us. Note that the dataset used in `results.ipynb` is already processed in `src/data/dataprocessing.py` and includes both data from CMU and TMDb datasets.
 
-Inflation is also a parameter that should not be neglected. All the cost/revenue data should be scaled according to the inflation between the year of production of a given movie and today. [This dataset containing the history of inflation rate in the US](https://www.macrotrends.net/global-metrics/countries/USA/united-states/inflation-rate-cpi) will be very useful for this. Knowing all the annual inflation rates, computing the cumulative rates for every year and applying them to the money-related values will be feasible.
-
 
 ## Methods
 
 **1. Data pre-processing:**
+  + Cleaning datasets (remove rows with missing values, dropping unnecessary columns) and merging them.
   + Transforming the numerical columns to numbers
-  + Transforming columns that list things to actual lists. This makes handling the data easier, such as for one hot encoding
+  + Transforming columns that list things to arrays. This makes handling the data easier, such as for one hot encoding
   + One-hot encoding of categorical data (genre, language…)
-  + Scaling of cost/revenue to take time into consideration. Transforming revenue to log revenue, to account for the skewed distribution of revenues (see notebook)
+  + Transforming revenue to log revenue, to account for the skewed distribution of revenues
     
 **2. Initial data analysis:**
-  + plotting success vs different features
+  + plotting movie success vs different features
     + scatter plots for continuous features (runtime, budget, year…)
     + bar plots for categorical data (languages, actors…)
   + Computation of Pearson/Spearman correlation coefficients
+  + Analysis of movie summaries: novelty, sentiment analysis, readability...
   + Regression analysis, and Random Forest for feature importance
-  + Analysis of movie summaries, sentiment analysis, readability...
     
 **3. Comparative study between financially successful and highly rated movies:**
   + Clustering: Establish clusters of movies according to their genre, budget, country of production...
@@ -130,20 +128,8 @@ Deadline: December 20th => 5 weeks left for the project
 
 ## Team organisation
 
-Data analysis/visualisation for TMDb ratings: Omar and Eirikur
-
-Regression analysis + Random Forest: Youssef and Eirikur
-
-Further analysis of summaries, NLP: Liess and Omar
-
-Defining movie clusters, further data transformation: Anna and Youssef
-
-ML models: Eirikur and Anna
-
-Comparative analysis: Omar and Youssef
-
-Data Story : Everyone
-
-## Questions for TAs 
-
-Are we able to slightly redirect the project during the milestone 3 or are we required to execute what we presented ?
+Youssef:
+Omar:
+Liess:
+Eirikur: 
+Anna: problem formulation, project description, final touches
