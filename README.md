@@ -110,25 +110,20 @@ The given CMU Movie Dataset Corpus, although being interesting, lacks data: for 
     + Research of a feature combination that can lead to an excellent movie both financially and critically
 
 
-
-## Proposed timeline
-
-Deadline: December 20th => 5 weeks left for the project
-
-**Week 1** (-> 22 Nov): Finish the initial data analysis: we already have plots for financial success, need to do the same for TMDb ratings.
-
-**Week 2** (-> 29 Nov): Homework 2, regression analysis and random forest for TMDb ratings
-
-**Week 3** (-> 6 Dec): Supervised machine learning models for predicting TMDb score, clustering of similar movies
-
-**Week 4** (-> 13 Dec): Comparison of feature importance, identification of (dis)similarities between both types of success
-
-**Week 5** (-> 20 Dec): Data story
-
 ## Team organisation
 
-Youssef:
-Omar:
-Liess:
-Eirikur: 
-Anna: problem formulation, project description, final touches
+Data analysis + visualisation for revenue: Omar and Eirikur
+
+Data analysis + visualisation for TMDb ratings: Liess and Anna
+
+Regression analysis + Random Forest: Youssef and Eirikur
+
+Analysis of summaries, NLP: Liess and Omar
+
+Comparative analysis: Omar, Youssef Liess
+
+Problem formulation, project description: Anna and Eirikur
+
+Running tests, final touches: Youssef and Anna
+
+Data Story: everyone :)
