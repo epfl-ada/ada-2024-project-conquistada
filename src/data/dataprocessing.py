@@ -108,8 +108,7 @@ def enrich_dataset(tmdb, movies):
     )
 
 # NER function to identify diversity elements
-def extract_entities(text):
-    nlp = spacy.load('en_core_web_sm')
+def extract_entities(text, nlp):
     doc = nlp(text)
     entities = {'characters': [], 'locations': [], 'other_entities': []}
     for ent in doc.ents:
