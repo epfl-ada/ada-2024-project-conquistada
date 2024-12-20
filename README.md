@@ -1,6 +1,8 @@
 # What makes for a successful movie?
 
-The description of our project in the form of a data story can be found on our [website](https://epfl-ada.github.io/conquistada.github.io)
+The description of our project in the form of a data story can be found on [our website](https://epfl-ada.github.io/conquistada.github.io)
+
+https://epfl-ada.github.io/conquistada.github.io
 
 #### Quickstart
 ```bash
@@ -105,8 +107,7 @@ The given CMU Movie Dataset Corpus, although being interesting, lacks data: for 
 **3. Comparative study between financially successful and highly rated movies:**
   + Clustering: Establish clusters of movies according to their genre, budget, country of production...
   + Tree based models to determine feature importance for both financial success and high ratings
-  + Supervised ML models to predict both economical and critical successes
-  + Analysis of relevant features amongst highly rated movies and financially successful movies
+  + Analysis of relevant features amongst highly rated movies and financially successful ones
     + Research of a feature combination that can lead to an excellent movie both financially and critically
 
 
