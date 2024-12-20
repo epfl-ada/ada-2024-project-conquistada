@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import scipy.stats as stats
 import seaborn as sns
 import json
+import spacy
 
 from sklearn.preprocessing import StandardScaler
 
@@ -105,3 +106,17 @@ def enrich_dataset(tmdb, movies):
         production_countries_exploded, # The exploded dataset with one row per production country in the production countries column
         keywords_exploded, # The exploded dataset with one row per keyword in the keywords column
     )
+
+# NER function to identify diversity elements
+def extract_entities(text):
+    nlp = spacy.load('en_core_web_sm')
+    doc = nlp(text)
+    entities = {'characters': [], 'locations': [], 'other_entities': []}
+    for ent in doc.ents:
+        if ent.label_ == "PERSON":
+            entities['characters'].append(ent.text)
+        elif ent.label_ == "GPE":
+            entities['locations'].append(ent.text)
+        else:
+            entities['other_entities'].append((ent.text, ent.label_))
+    return entities
