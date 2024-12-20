@@ -1,5 +1,7 @@
 # What makes for a successful movie?
 
+The description of our project can be found on our [website](https://epfl-ada.github.io/conquistada.github.io)
+
 ## Quickstart
 ```bash
 # clone project
