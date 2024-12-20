@@ -10,7 +10,7 @@ from sklearn.preprocessing import StandardScaler
 
 
 def clean_tmdb(tmdb):
-    """This function cleans the tmdb dataset by removing rows with missing values and dropping unecessary columns.
+    """This function cleans the tmdb dataset by removing rows with missing values and dropping unnecessary columns.
 
     Args:
         tmdb (pd.DataFrame): The tmdb dataset.
