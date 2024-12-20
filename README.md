@@ -1,6 +1,6 @@
 # What makes for a successful movie?
 
-The description of our project can be found on our [website](https://epfl-ada.github.io/conquistada.github.io)
+The description of our project in the form of a data story can be found on our [website](https://epfl-ada.github.io/conquistada.github.io)
 
 #### Quickstart
 ```bash
@@ -36,8 +36,11 @@ pip install -r pip_requirements.txt
 
 #### How to use the library
 
-The datasets we used for our analysis can be found in the [cmu](data/cmu) and the [tmdb](data/tmdb) folders, contained in the [data folders](data)
-The results of our analysis can be found in this [notebook](results.ipynb). This notebook calls external scripts for [loading the data](src/data/dataprocessing.py) and [dataprocessing](src/data/dataprocessing)
+The datasets we used for our analysis can be found in the [cmu](data/cmu) and the [tmdb](data/tmdb) folders.
+The results of our analysis can be found in this [notebook](results.ipynb). This notebook calls external scripts for [loading the data](src/data/dataprocessing.py) and [dataprocessing](src/data/dataprocessing.py). The methods called in the notebook can be found [here] (add the methods folder)
+
+> [!CAUTION]
+> add the methods thing + link
 
 ## Abstract
 This project investigates the factors that contribute to a movie's success. Is it as simple as casting the most popular actors ?
