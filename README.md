@@ -1,5 +1,37 @@
 # What makes for a successful movie?
 
+## Quickstart
+```bash
+# clone project
+git clone <project link>
+cd <project repo>
+
+# install requirements
+pip install -r pip_requirements.txt
+```
+
+## Project Structure
+```
+├── data                          <- Project data files
+│   ├── cmu                           <- CMU Movie Summary Corpus
+│   ├── tmdb                          <- Tmdb Dataset
+│
+├── src                           <- Source code
+│   ├── data                          <- Data directory
+│       ├── dataprocessing.py
+│   ├── scripts                       <- Shell scripts
+│       ├── load_save.py                 
+│   ├── utils                         <- Utility directory
+│       ├── utils.py
+│                      
+│
+├── results.ipynb                 <- Notebook with the results of our analysis
+│
+├── README.md                 
+├── pip_requirements.txt          <- File for installing python dependencies
+└── README.md
+```
+
 ## Abstract
 This project investigates the factors that contribute to a movie's success. Is it as simple as casting the most popular actors ?
 
